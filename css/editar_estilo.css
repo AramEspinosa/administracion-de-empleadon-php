@@ -1,0 +1,239 @@
+*{margin:0; padding:0;font-family: 'Roboto', sans-serif;}
+
+body{
+    
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-attachment: fixed;
+
+}
+
+header{
+    width: 100%;
+    overflow: hidden;
+    background: #252932;
+    margin-bottom: 20px;
+}
+
+.wrapper{
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+header .logo{
+    color:white;
+    font-size: 50px;
+    line-height: 200px;
+    float: left;
+}
+header nav{
+    float: right;
+    line-height: 200px;
+    
+}
+
+header nav a {
+    display: inline-block;
+    color:#fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    line-height: normal;
+    font-size: 20px;
+    font-weight: bold;
+    -webkit-transition:all 500ms ease;
+    -o-transition:all 50ms ease;
+    transition:all 50ms ease;
+}
+
+header nav img{
+    width: 100px;
+    height: 100px;
+    margin-bottom: -40px
+}
+
+header nav a:hover{
+    background: grey;
+    border-radius: 50px;
+}
+
+
+
+.header2 {
+    position: fixed;
+    height: 100px;
+}
+
+.header2 .logo{
+    line-height: 100px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.header2 nav{
+    line-height: 100px;
+}
+
+div.contenido {
+    width: 100%;
+    padding: 50px;
+    margin-top: 130px;
+    background: rgba(130, 135, 130, 0.75);;
+    border-bottom-right-radius: 20px;
+}
+
+div.contenido h1{
+    text-align: left;
+    font-size: 2em;
+    color: aliceblue;
+    font-weight: bold;
+}
+
+div.contenido table{
+    border-collapse: collapse;
+    margin-top: 25px;
+    font-size: 1.3em;
+    width: 87%;
+    float: center;
+}
+
+div.contenido table thead tr{
+    background-color: blue;
+    color: aliceblue;
+    text-align: left;
+    font-weight: bold;
+}
+
+div.contenido table th,
+div.contenido table td{
+    padding: 12px 15px;
+}
+
+
+div.contenido table tbody tr:last-of-type {
+    border-bottom: 2px solid blue;
+    background-color: white;
+}
+
+div.contenido table tbody tr button{
+    border: 2px solid white;
+    background: #252932;
+    cursor: pointer;
+    color: white;
+    outline: none;
+    transition: all 300ms;
+    font-size: 20px;
+    width: 100%;
+    padding: 7px 7px;
+    border-radius: 10px;
+}
+
+div.contenido table tbody tr button:hover{
+    background: #2DE72D;
+    color: #fff;
+}
+
+div.contenido table tbody tr input.btn_submit{
+    padding: 7px 7px;
+    width: 100%;
+    border: 2px solid #fff;
+    background: #252932;
+    font-size: 19px;
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+    outline: none;
+    transition: all 300ms;
+    border-radius: 10px;
+}
+
+div.contenido table tbody tr input.btn_submit:hover{
+    background: red;
+    color: white;
+}
+
+div.contenido table tbody tr input.tx{
+    padding: 0;
+    width: 100%;
+    border: 2px solid #fff;
+    background: transparent;
+    font-size: 19px;
+    cursor: pointer;
+    color: black;
+    outline: none;
+    transition: all 300ms;
+}
+
+div.contenido table tbody tr input.tx:hover{
+    color: blue;
+}
+
+
+
+@media screen and (max-width: 850px){
+    
+    .header2 .logo{
+    font-size: 20px;
+        margin-top: -3px;
+}
+    
+    
+header nav a{
+    border-radius: 50px;
+    text-align: left;
+    font-size: 18px;
+    padding: 2.5px 5px;
+}
+    
+header nav img{
+    width: 80px;
+    height: 80px;
+}
+    body{
+    background-position: left;
+    }
+    
+    div.contenido table{
+    font-size: 10px;;
+}
+    
+div.contenido table th,
+div.contenido table td{
+    padding: 6px 7.5px;
+}
+    div.contenido table tbody tr button{
+        padding: 5px 5px;
+        font-size: 12px;
+    }
+    
+    div.contenido{
+    padding: 25px;
+    }
+    
+    div.contenido input.btn_noguardar{
+        margin-top: 10px;
+        margin-bottom: 20px;
+        float: left;
+        margin-left: 0%;
+    }
+    div.contenido input.btn_report{
+        margin-top: 10px;
+        margin-bottom: 20px;
+        float: left;
+    }
+    
+    div.contenido h1{
+    
+    font-size: 1.7em;
+}
+    div.contenido table tbody tr input.btn_submit{
+        font-size: 12px;
+    }
+    div.contenido table tbody tr input.tx{
+        font-size: 10px;
+    }
+
+}

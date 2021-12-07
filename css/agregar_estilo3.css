@@ -1,0 +1,222 @@
+*{margin:0; padding:0;font-family: 'Roboto', sans-serif;}
+
+body{
+    
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-attachment: fixed;
+
+}
+
+header{
+    width: 100%;
+    overflow: hidden;
+    background: #252932;
+    margin-bottom: 20px;
+}
+
+.wrapper{
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+header .logo{
+    color:white;
+    font-size: 50px;
+    line-height: 200px;
+    float: left;
+}
+header nav{
+    float: right;
+    line-height: 200px;
+    
+}
+
+header nav a {
+    display: inline-block;
+    color:#fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    line-height: normal;
+    font-size: 20px;
+    font-weight: bold;
+    -webkit-transition:all 500ms ease;
+    -o-transition:all 50ms ease;
+    transition:all 50ms ease;
+}
+
+header nav img{
+    width: 100px;
+    height: 100px;
+    margin-bottom: -40px
+}
+
+header nav a:hover{
+    background: grey;
+    border-radius: 50px;
+}
+
+
+
+.header2 {
+    position: fixed;
+    height: 100px;
+}
+
+.header2 .logo{
+    line-height: 100px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.header2 nav{
+    line-height: 100px;
+}
+
+div.contenido {
+    float: center;
+    width: 60%;
+    height: 100%;
+    margin-left: 15%;
+    position: relative;
+    padding: 40px;
+    margin-top: 130px;
+    background: rgba(130, 135, 130, 0.75);;
+    border-radius: 20px;
+}
+
+div.contenido h1{
+    text-align: left;
+    font-size: 2em;
+    color: aliceblue;
+    font-weight: bold;
+}
+
+div.contenido form h2{
+    margin-left: 10%;
+    text-align: left;
+    font-size: 1.7em;
+    color: black;
+    font-weight: bold;
+    margin-top: 20px;
+}
+div.contenido form input{
+    margin-left: 10%;
+    text-align: left;
+    font-size: 1.7em;
+    color: black;
+    font-weight: bold;
+    margin-top: 10px;
+    width: 60%;
+    padding: 5px;
+}
+
+div.contenido table{
+    border-collapse: collapse;
+    margin-top: 75px;
+    font-size: 0.8em;
+    min-width: 400px;
+    margin-left: 180px;
+}
+
+div.contenido table thead tr{
+    background-color: blue;
+    color: aliceblue;
+    text-align: left;
+    font-weight: bold;
+}
+
+div.contenido table th,
+div.contenido table td{
+    padding: 12px 15px;
+}
+
+
+div.contenido table tbody tr:last-of-type {
+    border-bottom: 2px solid blue;
+    background-color: white;
+}
+
+div.contenido table tbody tr input{
+    border: 2px solid blue;
+    background: transparent;
+    cursor: pointer;
+    color: #2DE72D;
+    outline: none;
+    transition: all 300ms;
+}
+
+div.contenido table tbody tr input:hover{
+    background: #2DE72D;
+    color: #fff;
+}
+
+div.contenido input.btnguardar{
+    margin-top: 20px;
+    margin-left: 20px;
+    padding: 10px 10px;
+    width: 100px;
+    border: 2px solid #fff;
+    background: #03F70E;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+    outline: none;
+    transition: all 300ms;
+}
+
+div.contenido input.btnguardar:hover{
+    background: lightgreen;
+    color: white;
+}
+
+div.contenido input.btn_noguardar{
+    margin-top: -40px;
+    float: right;
+    padding: 10px 10px;
+    width: 90px;
+    border: 2px solid #fff;
+    background: #252932;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 20px;
+    cursor: pointer;
+    color: white;
+    outline: none;
+    transition: all 300ms;
+}
+
+div.contenido input.btn_noguardar:hover{
+    background: #F7B403;
+    color: white;
+}
+
+@media screen and (max-width: 850px) {
+    .header2 .logo{
+    font-size: 20px;
+        margin-top: -3px;
+}
+    
+    
+header nav a{
+    border-radius: 50px;
+    text-align: left;
+    font-size: 18px;
+    padding: 2.5px 5px;
+}
+    
+header nav img{
+    width: 80px;
+    height: 80px;
+}
+    div.contenido input.btn_noguardar{
+        margin-top: 10px;
+    }
+    
+}

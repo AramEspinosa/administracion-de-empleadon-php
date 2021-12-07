@@ -1,0 +1,295 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: darkgrey;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+main {
+    width: 100%;
+    padding: 20px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.contenedor__todo {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+}
+
+.caja__trasera {
+    margin-top: -58px;
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    background-color: darkgrey
+        /*( 0, 128, 255, 0.5)*/
+    ;
+
+}
+
+.caja__trasera div {
+    margin: 58px 90px;
+    color: white;
+    transition: all 500ms;
+}
+
+.caja__trasera div p,
+.caja__trasera div button {
+    margin-top: 30px;
+    margin-left: -35px;
+    
+}
+
+.caja__trasera div h3 {
+    font-weight: 400;
+    font-size: 26px;
+    margin-left: 0px;
+    
+}
+
+.caja__trasera button {
+    padding: 10px 40px;
+    width: 200px;
+    border: 2px solid #101010;
+    background: #202020;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+    outline: none;
+    transition: all 300ms;
+}
+
+.caja__trasera button:hover {
+    background: transparent;
+    color: #fff;
+}
+
+/*Formularios*/
+.contenedor_login-register {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 380px;
+    position: relative;
+    top: -197px;
+    left: 10px;
+    transition: left 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
+}
+
+.contenedor_login-register form {
+    width: 100%;
+    padding: 20px 20px;
+    background: #fff;
+    position: absolute;
+    border-radius: 20px;
+}
+
+.contenedor_login-register form h2 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: forestgreen;
+}
+
+.contenedor_login-register form input {
+    width: 95%;
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    background: #f2f2f2;
+    font-size: 16px;
+    outline: none;
+}
+
+.contenedor_login-register form button {
+    padding: 10px 20px;
+    margin-top: 20px;
+    border: none;
+    font-size: 14px;
+    background: chartreuse;
+    color: white;
+    cursor: pointer;
+    outline: none;
+}
+
+.formulario__login {
+    opacity: 1;
+    display: block;
+}
+.formulario__login img{
+    width: 225px;
+    height: 225px; 
+}
+.formulario__register {
+    display: none;
+}
+
+
+
+/*Responsive*/
+
+@media screen and (max-width: 850px) {
+    main {
+        margin-top: 50px;
+    }
+    
+    
+
+    .caja__trasera {
+        max-width: 350px;
+        flex-direction: column;
+        margin: auto;
+        
+    }
+
+    .caja__trasera div {
+        margin: 55px;
+        margin-top: 200px;
+        position: absolute;
+    }
+    
+    .caja__trasera div button {
+        margin-top: 500px;
+    
+        width: 190%;
+        
+        float: left;
+        margin-bottom: 10px;
+    }
+    
+    .caja__trasera div h3{
+        margin-left: -65px;
+    }
+    
+    
+    
+
+
+
+    /*Formulario*/
+    .contenedor_login-register {
+        top: -80px;
+        left: -30px;
+        margin: auto;
+        width: 90%;
+    }
+
+    .contenedor_login-register form {
+        position: relative;
+    
+    }
+
+    
+    .container-body{
+        flex-wrap: wrap;
+    }
+    .columna1{
+        max-width: 100%;
+    }
+    .columna2{
+        margin-top: 20px;
+    }
+    
+
+}
+
+footer {
+    width: 100%;
+    background: #202020;
+    color: white;
+    
+     
+}
+
+.container-footer-body {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.container-body {
+    display: flex;
+    justify-content: space-between;
+}
+
+.columna1 {
+    max-width: 500px;
+}
+.columna1 h1{
+    font-size: 20px;
+}
+.columna1 p{
+    font-size: 14px;
+    color: #C7C7C7;
+    margin-top: 20px;
+}
+.columna2{
+    max-width: 700px;
+}
+.columna2 h1{
+    font-size: 20px;
+}
+
+.row{
+    margin-top: 10px;
+    display: flex;
+}
+.row img{
+    width: 30px;
+    height: 30px;
+}
+.row label{
+    font-size: 14px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.container-footer{
+    width: 100%;
+    background: #101010;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.copyright{
+    color: #C7C7C7;
+    
+}
+.copyright label{
+    margin-left: 82px;
+    color: white;
+    font-size: 14px;
+}
+
+.information{
+    margin-right: 170px;
+}
+
+.information a{
+    font-size: 14px;
+    text-decoration: none;
+    color: white;
+}
+
