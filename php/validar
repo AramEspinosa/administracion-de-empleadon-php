@@ -1,0 +1,61 @@
+<?php
+$usuario=$_POST['usuario'];
+$contraseña=$_POST['contraseña'];
+session_start();
+
+$conexion=mysqli_connect("sql205.epizy.com","epiz_30533994","1yuE1DO5YNmm","epiz_30533994_weport");
+
+$consulta="SELECT * FROM usuarios WHERE id_usu='$usuario' AND contrasena='$contraseña'";
+$resultado=mysqli_query($conexion,$consulta);
+
+$filas=mysqli_fetch_array($resultado);
+
+if($filas['id_rol']==1){ 
+    
+    $_SESSION['admin']=$usuario;
+    header("location: ../admin.php");
+
+}else
+if($filas['id_rol']==2){
+    
+    $_SESSION['empleado']=$usuario;
+    header("location: ../empleado.php");
+}
+else
+if($filas['id_usu'] != $usuario ){
+    ?>
+    <?php  
+    echo'
+<script>
+alert("Usuario o Contraseña incorrecta, favor de verificar tus datos");
+window.location = "../index.php"
+</script>';
+    
+    exit;
+    session_destroy(); 
+    die();
+    ?>
+    
+    <?php
+}else
+    if($filas['contrasena'] != $contraseña ){
+    ?>
+    <?php 
+    echo'
+<script>
+alert("Contraseña incorrecta, favor de verificar tus datos");
+window.location = "../index.php"
+</script>';
+    
+    exit;
+    session_destroy(); 
+    die();
+    ?>
+    
+    <?php
+}
+mysqli_free_result($resultado);
+mysqli_close($conexion); 
+
+?>
+
